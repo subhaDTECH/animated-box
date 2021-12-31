@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .Main_div{
+            width: 100vw;
+            height: 100vh;
+            background-color:#ff7675;
+            display: grid;
+            place-items: center;
+        }
+        .center_div{
+            width: 40%;
+            height: 40%;
+            background-color: #fff;
+            position: relative;
+        }
+        span:nth-child(2){
+            animation-delay: 0.5s;
+        }
+        span:nth-child(3){
+            animation-delay: 0.5s;
+        }
+        span{
+            width: 10%;
+            height: 20%;
+            background-color:#000;
+            top: 0%;
+            left: 0%;
+            position:absolute;
+            animation: suva 2s linear infinite ;
+            
+        }
+        @keyframes suva {
+            0%{top: 0%;
+            left: 0%;
+            }
+            12.5%{
+                top: 0%;
+                left: 50%;
+            }
+            25%{
+                top: 0%;
+                left: 50%;
+            }
+            37.5%{
+                top: 50%;
+                left: 50%;
+
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+            }
+            62.5%{
+                top: 50%;
+                left: 0%;
+            }
+            75%{
+                top: 50%;
+                left: 0%;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="Main_div">
+        <div class='center_div'>
+               <span class="load"></span>
+               <span></span>
+               <span></span>
+        </div>
+
+    </div>
+</body>
+</html>
